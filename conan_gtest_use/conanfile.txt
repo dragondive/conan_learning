@@ -1,0 +1,5 @@
+[requires]
+conan_gtest/0.1@aravind/testing
+
+[generators]
+cmake
