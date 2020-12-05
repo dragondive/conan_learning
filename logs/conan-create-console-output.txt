@@ -1,0 +1,148 @@
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+ng exports_sources: Copied 1 file: typescript
+conan_gtest/0.1@aravind/testing exports_sources: Copied 1 '.swo' file: .conanfile.py.swo
+conan_gtest/0.1@aravind/testing exports_sources: Copied 5 '.cpp' files
+conan_gtest/0.1@aravind/testing exports_sources: Copied 1 '.h' file: sample.h
+conan_gtest/0.1@aravind/testing: A new conanfile.py version was exported
+conan_gtest/0.1@aravind/testing: Folder: /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/export
+conan_gtest/0.1@aravind/testing: Exported revision: 2482dd3c906e8cb9a982eb91c3fb10f0
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+gtest/1.10.0: Not found in local cache, looking in remotes...
+gtest/1.10.0: Trying with 'conan-center'...
+Downloading conanmanifest.txt
+Downloading conanfile.py
+Downloading conan_export.tgz
+gtest/1.10.0: Downloaded recipe revision 0
+conan_gtest/0.1@aravind/testing: Forced build from source
+conan_gtest/0.1@aravind/testing (test package): Installing package
+Requirements
+    conan_gtest/0.1@aravind/testing from local cache - Cache
+    gtest/1.10.0 from 'conan-center' - Downloaded
+Packages
+    conan_gtest/0.1@aravind/testing:c7bd49af56d0411d30cefb9b6725d190af1c1361 - Build
+    gtest/1.10.0:7320405f83ec32d8556b524cdda87ee295bb7b84 - Download
+
+Installing (downloading, building) binaries...
+gtest/1.10.0: Retrieving package 7320405f83ec32d8556b524cdda87ee295bb7b84 from remote 'conan-center' 
+Downloading conanmanifest.txt
+Downloading conaninfo.txt
+Downloading conan_package.tgz
+gtest/1.10.0: Package installed 7320405f83ec32d8556b524cdda87ee295bb7b84
+gtest/1.10.0: Downloaded package revision 0
+conan_gtest/0.1@aravind/testing: Configuring sources in /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/source
+conan_gtest/0.1@aravind/testing: Copying sources to build folder
+conan_gtest/0.1@aravind/testing: Building your package in /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/c7bd49af56d0411d30cefb9b6725d190af1c1361
+conan_gtest/0.1@aravind/testing: Generator cmake created conanbuildinfo.cmake
+conan_gtest/0.1@aravind/testing: Calling build()
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++11
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/c7bd49af56d0411d30cefb9b6725d190af1c1361
+Scanning dependencies of target conan_gtest_run
+Scanning dependencies of target conan_gtest
+[ 11%] Building CXX object src/CMakeFiles/conan_gtest.dir/main.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/conan_gtest.dir/sample.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/conan_gtest_run.dir/sample.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/conan_gtest_run.dir/main.cpp.o
+[ 55%] Linking CXX static library ../lib/libconan_gtest.a
+[ 66%] Linking CXX executable ../bin/conan_gtest_run
+[ 66%] Built target conan_gtest
+Scanning dependencies of target conan_gtest_test
+[ 77%] Building CXX object src/test/CMakeFiles/conan_gtest_test.dir/gtest_main.cpp.o
+[ 88%] Building CXX object src/test/CMakeFiles/conan_gtest_test.dir/sample_test.cpp.o
+[ 88%] Built target conan_gtest_run
+[100%] Linking CXX executable ../../bin/conan_gtest_test
+[100%] Built target conan_gtest_test
+conan_gtest/0.1@aravind/testing: Package 'c7bd49af56d0411d30cefb9b6725d190af1c1361' built
+conan_gtest/0.1@aravind/testing: Build folder /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/c7bd49af56d0411d30cefb9b6725d190af1c1361
+conan_gtest/0.1@aravind/testing: Generated conaninfo.txt
+conan_gtest/0.1@aravind/testing: Generated conanbuildinfo.txt
+conan_gtest/0.1@aravind/testing: Generating the package
+conan_gtest/0.1@aravind/testing: Package folder /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/package/c7bd49af56d0411d30cefb9b6725d190af1c1361
+conan_gtest/0.1@aravind/testing: Calling package()
+conan_gtest/0.1@aravind/testing package(): Packaged 1 '.a' file: libconan_gtest.a
+conan_gtest/0.1@aravind/testing package(): Packaged 1 '.h' file: sample.h
+conan_gtest/0.1@aravind/testing: Package 'c7bd49af56d0411d30cefb9b6725d190af1c1361' created
+conan_gtest/0.1@aravind/testing: Created package revision e88cc291b5fbd0b7db605497e6fd5129
+conan_gtest/0.1@aravind/testing (test package): Generator cmake created conanbuildinfo.cmake
+conan_gtest/0.1@aravind/testing (test package): Generator txt created conanbuildinfo.txt
+conan_gtest/0.1@aravind/testing (test package): Generated conaninfo.txt
+conan_gtest/0.1@aravind/testing (test package): Generated graphinfo
+Using lockfile: '/home/aravind/conan_learning/conan_gtest/test_package/build/878b1b6e2d4cbc82452d014e37c38868584457e8/conan.lock'
+Using cached profile from lockfile
+conan_gtest/0.1@aravind/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9
+-- Conan: Checking correct version: 9
+-- Conan: C++ stdlib: libstdc++11
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+
+
+-- Build files have been written to: /home/aravind/conan_learning/conan_gtest/test_package/build/878b1b6e2d4cbc82452d014e37c38868584457e8
+Scanning dependencies of target example
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.o
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+conan_gtest/0.1@aravind/testing (test package): Running test()
+hello 42
+[HOOK - attribute_checker.py] pre_export(): WARN: Conanfile doesn't have 'license'. It is recommended to add it as attribute
