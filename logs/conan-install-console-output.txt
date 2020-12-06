@@ -1,0 +1,56 @@
+aravind@dragondive:~/conan_learning/conan_gtest_use/build$ conan install ..
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=9
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+conan_gtest/0.1@aravind/testing: Not found in local cache, looking in remotes...
+conan_gtest/0.1@aravind/testing: Trying with 'conan-center'...
+conan_gtest/0.1@aravind/testing: Trying with 'localrepo'...
+Downloading conanmanifest.txt completed [1.16k]                                          
+Downloading conanfile.py completed [1.07k]                                               
+conan_gtest/0.1@aravind/testing: Downloaded recipe revision 0
+gtest/1.10.0: Not found in local cache, looking in remotes...
+gtest/1.10.0: Trying with 'conan-center'...
+Downloading conanmanifest.txt completed [0.39k]                                          
+Downloading conanfile.py completed [4.71k]                                               
+Downloading conan_export.tgz completed [0.30k]                                           
+Decompressing conan_export.tgz completed [0.00k]                                         
+gtest/1.10.0: Downloaded recipe revision 0
+conanfile.txt: Installing package
+Requirements
+    conan_gtest/0.1@aravind/testing from 'localrepo' - Downloaded
+    gtest/1.10.0 from 'conan-center' - Downloaded
+Packages
+    conan_gtest/0.1@aravind/testing:c7bd49af56d0411d30cefb9b6725d190af1c1361 - Download
+    gtest/1.10.0:7320405f83ec32d8556b524cdda87ee295bb7b84 - Download
+
+Installing (downloading, building) binaries...
+gtest/1.10.0: Retrieving package 7320405f83ec32d8556b524cdda87ee295bb7b84 from remote 'conan-center' 
+Downloading conanmanifest.txt completed [3.64k]                                          
+Downloading conaninfo.txt completed [0.55k]                                              
+Downloading conan_package.tgz completed [458.84k]                                        
+Decompressing conan_package.tgz completed [0.00k]                                        
+gtest/1.10.0: Package installed 7320405f83ec32d8556b524cdda87ee295bb7b84
+gtest/1.10.0: Downloaded package revision 0
+conan_gtest/0.1@aravind/testing: Retrieving package c7bd49af56d0411d30cefb9b6725d190af1c1361 from remote 'localrepo' 
+Downloading conanmanifest.txt completed [0.16k]                                          
+Downloading conaninfo.txt completed [0.61k]                                              
+Downloading conan_package.tgz completed [1.80k]                                          
+Decompressing conan_package.tgz completed [0.00k]                                        
+conan_gtest/0.1@aravind/testing: Package installed c7bd49af56d0411d30cefb9b6725d190af1c1361
+conan_gtest/0.1@aravind/testing: Downloaded package revision 0
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
+
