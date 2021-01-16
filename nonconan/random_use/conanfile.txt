@@ -1,0 +1,11 @@
+[requires]
+random/0.1@aravind/testing
+
+[generators]
+cmake
+
+[options]
+random:shared=True
+
+[imports]
+lib, *.dll -> ./bin
