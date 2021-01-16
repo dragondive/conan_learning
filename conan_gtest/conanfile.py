@@ -4,7 +4,7 @@ from conans import ConanFile, CMake
 class ConanGtestConan(ConanFile):
     name = "conan_gtest"
     version = "0.1"
-    author = "Aravind Pai arvindpai1@gmail.com"
+    author = "Aravind Pai dragondive@outlook.in"
     url = "https://github.com/dragondive/conan_learning"
     description = "Simple project to demonstrate and learn use of Conan"
     topics = ("conan", "gtest", "self-learning")
@@ -12,8 +12,8 @@ class ConanGtestConan(ConanFile):
     options = {"shared": [True, False]}
     default_options = {"shared": False}
     generators = "cmake"
-    exports_sources = "*"
-    requires = "gtest/1.10.0"
+    exports_sources = "CMakeLists.txt", "**/*.cpp", "**/*.h", "**/CMakeLists.txt"
+    build_requires = "gtest/1.10.0"
 
     def build(self):
         cmake = CMake(self)

@@ -3,5 +3,5 @@
 
 int main()
 {
-    std::cout << get_hello() << " " << get_42() << std::endl;
+    std::cout << "main: " << get_hello() << " " << get_42() << std::endl;
 }
