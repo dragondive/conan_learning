@@ -1,0 +1,22 @@
+aravind@dragondive:~/conan_learning/nonconan/legacypkg$ conan export-pkg . random/0.1@aravind/testing -s os=Linux -s compiler=gcc -s build_type=Release -s arch=x86_64 -s compiler.version=9 -s compiler.libcxx=libstdc++11 -o random:shared=True 
+Exporting package recipe
+random/0.1@aravind/testing: A new conanfile.py version was exported
+random/0.1@aravind/testing: Folder: /home/aravind/.conan/data/random/0.1/aravind/testing/export
+random/0.1@aravind/testing: Exported revision: 4b9c82f5850f23a23254582c035e817f
+random/0.1@aravind/testing: Forced build from source
+Packaging to 97172bab7554b947975f35cab343b2a755de9955
+random/0.1@aravind/testing: Generating the package
+random/0.1@aravind/testing: Package folder /home/aravind/.conan/data/random/0.1/aravind/testing/package/97172bab7554b947975f35cab343b2a755de9955
+random/0.1@aravind/testing: Calling package()
+random/0.1@aravind/testing package(): Packaged 5 '.tex' files
+random/0.1@aravind/testing package(): Packaged 1 file: Makefile
+random/0.1@aravind/testing package(): Packaged 3 '.sty' files: tabu_doxygen.sty, doxygen.sty, longtable_doxygen.sty
+random/0.1@aravind/testing package(): Packaged 23 '.png' files
+random/0.1@aravind/testing package(): Packaged 10 '.js' files
+random/0.1@aravind/testing package(): Packaged 14 '.html' files
+random/0.1@aravind/testing package(): Packaged 3 '.css' files: doxygen.css, tabs.css, search.css
+random/0.1@aravind/testing package(): Packaged 1 '.dot' file: graph_legend.dot
+random/0.1@aravind/testing package(): Packaged 1 '.so' file: librandom.so
+random/0.1@aravind/testing package(): Packaged 1 '.h' file: random.h
+random/0.1@aravind/testing: Package '97172bab7554b947975f35cab343b2a755de9955' created
+random/0.1@aravind/testing: Created package revision ac628c8c3bf08c190d5247886bfdb3e6

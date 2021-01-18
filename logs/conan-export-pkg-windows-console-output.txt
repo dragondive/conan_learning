@@ -1,0 +1,25 @@
+aravind@dragondive:~/conan_learning/nonconan/legacypkg$ conan export-pkg . random/0.1@aravind/testing -s os=Windows -s compiler="Visual Studio" -s build_type=Release -s arch=x86_64 -s compiler.version=14 -o random:shared=True 
+Exporting package recipe
+random/0.1@aravind/testing: A new conanfile.py version was exported
+random/0.1@aravind/testing: Folder: /home/aravind/.conan/data/random/0.1/aravind/testing/export
+random/0.1@aravind/testing: Exported revision: 4b9c82f5850f23a23254582c035e817f
+random/0.1@aravind/testing: Forced build from source
+Packaging to c85f9b402dd4d46acdf074e1c63b768a41181d7a
+random/0.1@aravind/testing: Generating the package
+random/0.1@aravind/testing: Package folder /home/aravind/.conan/data/random/0.1/aravind/testing/package/c85f9b402dd4d46acdf074e1c63b768a41181d7a
+random/0.1@aravind/testing: Calling package()
+random/0.1@aravind/testing package(): Packaged 5 '.tex' files
+random/0.1@aravind/testing package(): Packaged 1 file: Makefile
+random/0.1@aravind/testing package(): Packaged 3 '.sty' files: tabu_doxygen.sty, doxygen.sty, longtable_doxygen.sty
+random/0.1@aravind/testing package(): Packaged 23 '.png' files
+random/0.1@aravind/testing package(): Packaged 10 '.js' files
+random/0.1@aravind/testing package(): Packaged 14 '.html' files
+random/0.1@aravind/testing package(): Packaged 3 '.css' files: doxygen.css, tabs.css, search.css
+random/0.1@aravind/testing package(): Packaged 1 '.dot' file: graph_legend.dot
+random/0.1@aravind/testing package(): Packaged 1 '.dll' file: random.dll
+random/0.1@aravind/testing package(): Packaged 1 '.exp' file: random.exp
+random/0.1@aravind/testing package(): Packaged 1 '.lib' file: random.lib
+random/0.1@aravind/testing package(): Packaged 1 '.h' file: random.h
+random/0.1@aravind/testing: Package 'c85f9b402dd4d46acdf074e1c63b768a41181d7a' created
+random/0.1@aravind/testing: Created package revision e586d0cde321fdc5126040af2dc2adbf
+
