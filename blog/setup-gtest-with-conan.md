@@ -11,7 +11,7 @@ As I did not know about Conan when I started this setup, my first attempt was by
 Prototype tests for the build setup
 -----------------------------------
 
-For this build setup, I use some simple functions and the corresponding google tests. The source code is available [here](../conan_learning/conan_gtest).  The prototype has the below source files:
+For this build setup, I use some simple functions and the corresponding google tests. The source code is available [here](../sources/conan_gtest).  The prototype has the below source files:
 
 ```
 conan_learning/

@@ -13,7 +13,7 @@ In the Conan recipe, only Conan packages can be specified as dependencies. Conan
 non-Conan package example
 -------------------------
 
-The source code used to create the non-Conan package in this example is available [here](../nonconan/random). Using cmake (that is, without Conan), I built this code into shared libraries on both Windows and Linux. I also created the documentation using doxygen. I packaged all these artifacts into a non-Conan package, available [here](../nonconan/legacypkg), with the following directory structure:
+The source code used to create the non-Conan package in this example is available [here](../sources/nonconan/random). Using cmake (that is, without Conan), I built this code into shared libraries on both Windows and Linux. I also created the documentation using doxygen. I packaged all these artifacts into a non-Conan package, available [here](../sources/nonconan/legacypkg), with the following directory structure:
 
 ```
 legacypkg/
@@ -74,7 +74,7 @@ As all the required artifacts are available, the `export-pkg` command can be cal
 Using the package
 -----------------
 
-The package can be uploaded to Artifactory as described [here](publish-conan-package-to-artifactory.md) and specified as a dependency in the package recipe. The example source code is available [here](../nonconan/random_use).
+The package can be uploaded to Artifactory as described [here](publish-conan-package-to-artifactory.md) and specified as a dependency in the package recipe. The example source code is available [here](../sources/nonconan/random_use).
 
 ```
 [requires]

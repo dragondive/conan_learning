@@ -22,9 +22,9 @@ Note that this command overwrites any files in the same directory with the same 
 Updating the auto-generated files
 ---------------------------------
 
-The generated `conanfile.py` then needs to be modified as per the `conan_gtest` package. In particular, the attribute `exports_sources` and the `source_folder` in `cmake.configure()` call need to be modified, as they differ from conan's auto-generated hello example. The other package dependencies should also be specified with the `requires` attribute. The updated file is [here](../conan_gtest/conanfile.py).
+The generated `conanfile.py` then needs to be modified as per the `conan_gtest` package. In particular, the attribute `exports_sources` and the `source_folder` in `cmake.configure()` call need to be modified, as they differ from conan's auto-generated hello example. The other package dependencies should also be specified with the `requires` attribute. The updated file is [here](../sources/conan_gtest/conanfile.py).
 
-Then the `example.cpp` file in `test_package` should be updated to test the `conan_gtest` package. The updated file is [here](../conan_gtest/test_package/example.cpp).
+Then the `example.cpp` file in `test_package` should be updated to test the `conan_gtest` package. The updated file is [here](../sources/conan_gtest/test_package/example.cpp).
 
 Using the `conan create` command
 --------------------------------
@@ -53,7 +53,7 @@ The `conan_gtest` package is now available in the local cache:
 Using the package
 -----------------
 
-The package `conan_gtest` can now be used in C++ code. Specify it in the `[requires]` section of `conanfile.txt` then build as usual with `conan install` and `cmake` calls. The example code which uses the `conan_gtest` package is [here](../conan_gtest_use).
+The package `conan_gtest` can now be used in C++ code. Specify it in the `[requires]` section of `conanfile.txt` then build as usual with `conan install` and `cmake` calls. The example code which uses the `conan_gtest` package is [here](../sources/conan_gtest_use).
 
     aravind@dragondive:~/conan_learning/conan_gtest_use/build$ ./bin/conan_gtest_use
     hello 42
