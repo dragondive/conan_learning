@@ -1,0 +1,101 @@
+aravind@dragondive:~/conan_learning/sources/crossbuild/conan_gtest$ conan create . conan_gtest/0.1@aravind/testing --profile=linux_to_win64.profile 
+[HOOK - attribute_checker.py] pre_export(): WARN: Conanfile doesn't have 'license'. It is recommended to add it as attribute
+Exporting package recipe
+conan_gtest/0.1@aravind/testing exports_sources: Copied 2 '.txt' files: CMakeLists.txt, CMakeLists.txt
+conan_gtest/0.1@aravind/testing exports_sources: Copied 2 '.cpp' files: sample.cpp, main.cpp
+conan_gtest/0.1@aravind/testing exports_sources: Copied 1 '.h' file: sample.h
+conan_gtest/0.1@aravind/testing: The stored package has not changed
+conan_gtest/0.1@aravind/testing: Exported revision: 86fe83a7bc1455e542eefd0b17c7f7d2
+Configuration:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=9.3
+os=Windows
+[options]
+[build_requires]
+[env]
+AR=x86_64-w64-mingw32-ar
+AS=x86_64-w64-mingw32-as
+CC=x86_64-w64-mingw32-gcc
+CHOST=x86_64-w64-mingw32
+CONAN_CMAKE_FIND_ROOT_PATH=/usr/x86_64-w64-mingw32 # Adjust this path  # Optional, for CMake to find things in that folder
+CONAN_CMAKE_SYSROOT=/usr/x86_64-w64-mingw32 # Adjust this path  # Optional, if we want to define sysroot
+CXX=x86_64-w64-mingw32-g++
+RANLIB=x86_64-w64-mingw32-ranlib
+RC=x86_64-w64-mingw32-windres
+STRIP=x86_64-w64-mingw32-strip
+conan_gtest/0.1@aravind/testing: Forced build from source
+Installing package: conan_gtest/0.1@aravind/testing
+Requirements
+    conan_gtest/0.1@aravind/testing from local cache - Cache
+Packages
+    conan_gtest/0.1@aravind/testing:96c349ce315b2d523417baaba29787411b4297a7 - Build
+
+Cross-build from 'Linux:x86_64' to 'Windows:x86_64'
+Installing (downloading, building) binaries...
+conan_gtest/0.1@aravind/testing: Copying sources to build folder
+conan_gtest/0.1@aravind/testing: Building your package in /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/96c349ce315b2d523417baaba29787411b4297a7
+conan_gtest/0.1@aravind/testing: Generator cmake created conanbuildinfo.cmake
+conan_gtest/0.1@aravind/testing: Calling build()
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/x86_64-w64-mingw32-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Compiler GCC>=5, checking major version 9.3
+-- Conan: Checking correct version: 9.3
+-- Conan: C++ stdlib: libstdc++11
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/96c349ce315b2d523417baaba29787411b4297a7
+Scanning dependencies of target conan_gtest_run
+Scanning dependencies of target conan_gtest
+[ 16%] Building CXX object src/CMakeFiles/conan_gtest_run.dir/sample.cpp.obj
+[ 33%] Building CXX object src/CMakeFiles/conan_gtest_run.dir/main.cpp.obj
+[ 50%] Building CXX object src/CMakeFiles/conan_gtest.dir/main.cpp.obj
+[ 66%] Building CXX object src/CMakeFiles/conan_gtest.dir/sample.cpp.obj
+[ 83%] Linking CXX static library ../lib/libconan_gtest.a
+[100%] Linking CXX executable ../bin/conan_gtest_run.exe
+[100%] Built target conan_gtest
+[100%] Built target conan_gtest_run
+conan_gtest/0.1@aravind/testing: Package '96c349ce315b2d523417baaba29787411b4297a7' built
+conan_gtest/0.1@aravind/testing: Build folder /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/build/96c349ce315b2d523417baaba29787411b4297a7
+conan_gtest/0.1@aravind/testing: Generated conaninfo.txt
+conan_gtest/0.1@aravind/testing: Generated conanbuildinfo.txt
+conan_gtest/0.1@aravind/testing: Generating the package
+conan_gtest/0.1@aravind/testing: Package folder /home/aravind/.conan/data/conan_gtest/0.1/aravind/testing/package/96c349ce315b2d523417baaba29787411b4297a7
+conan_gtest/0.1@aravind/testing: Calling package()
+conan_gtest/0.1@aravind/testing package(): Packaged 2 '.a' files: objects.a, libconan_gtest.a
+conan_gtest/0.1@aravind/testing package(): Packaged 1 '.h' file: sample.h
+conan_gtest/0.1@aravind/testing: Package '96c349ce315b2d523417baaba29787411b4297a7' created
+conan_gtest/0.1@aravind/testing: Created package revision d8691b664f71c2158b62b78ac5214ab9
+
