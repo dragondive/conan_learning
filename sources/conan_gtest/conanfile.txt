@@ -1,5 +1,8 @@
 [requires]
-gtest/1.10.0
+boost/1.75.0
 
 [generators]
 cmake
+
+[build_requires]
+gtest/1.10.0

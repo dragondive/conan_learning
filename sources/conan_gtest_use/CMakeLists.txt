@@ -6,5 +6,8 @@ add_definitions("-std=c++11")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(conan_gtest_use conan_gtest_use.cpp)
+add_executable(conan_gtest_use
+    main.cpp
+    use.cpp)
+
 target_link_libraries(conan_gtest_use ${CONAN_LIBS})

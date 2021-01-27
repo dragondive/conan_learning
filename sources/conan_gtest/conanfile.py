@@ -13,6 +13,7 @@ class ConanGtestConan(ConanFile):
     default_options = {"shared": False}
     generators = "cmake"
     exports_sources = "CMakeLists.txt", "**/*.cpp", "**/*.h", "**/CMakeLists.txt"
+    requires = "boost/1.75.0"
     build_requires = "gtest/1.10.0"
 
     def build(self):

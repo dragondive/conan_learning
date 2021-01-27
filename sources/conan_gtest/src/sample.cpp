@@ -7,5 +7,9 @@ int get_42()
 
 std::string get_hello()
 {
-    return "hello";
+    // NOTE: This roundabout implementation is only to show
+    // use of the Conan package boost.
+    std::string H = "HELLO";
+    boost::algorithm::to_lower(H);
+    return H;
 }
